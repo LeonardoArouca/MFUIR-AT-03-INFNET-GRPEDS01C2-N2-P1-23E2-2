@@ -1,0 +1,142 @@
+/* App.css */
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  margin-top: 0;
+  
+}
+
+/* Header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+  
+}
+
+.product {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Product Details */
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  
+  gap: 20px;
+}
+
+.product-image {
+  flex: 1 0 300px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-info {
+  flex: 1 0 300px;
+  max-height: 198px;
+  margin-top: 49px;
+  
+  max-width: 300px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+/* Seller Info */
+.seller-info {
+  margin-top: 20px;
+}
+
+/* Comments */
+.comments {
+  margin-top: 20px;
+}
+
+.comment {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.comment h4 {
+  margin-top: 0;
+}
+
+/* Questions */
+.questions {
+  margin-top: 20px;
+}
+
+/* Related Products */
+.related-products {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.related-products .product {
+  width: 200px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.related-products .product img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+  .product-details {
+    flex-direction: column;
+  }
+
+  .product-image,
+  .product-info {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .related-products .product {
+    width: 100%;
+  }
+}
